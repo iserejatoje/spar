@@ -47,10 +47,7 @@ button
 img
   display: block
   max-width: 100%
-
-.logotype
-  img
-    height: auto
+  height: auto
 
 header
   padding-top: 60px
@@ -287,17 +284,24 @@ p
   font-size: 14px
 
 .show-all
-  &__slider
-    z-index: 2
-    right: 0
-    top: -45px
-    position: absolute
   display: flex
   align-items: center
   line-height: 120%
   color: $p-black
   @extend .text-decoration-none
 
-  img
-    transform: translateY(2px)
+  svg
     margin-left: 12px
+    fill: $p-gray
+
+.image-round
+  @extend .overflow
+  @extend .br20
+
+.image-hover
+  img
+    transition: transform 180ms linear
+
+  &:hover
+    img
+      transform: scale(1.07)

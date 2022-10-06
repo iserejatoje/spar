@@ -1,10 +1,9 @@
-.sale-slider
+.large-slider
   overflow: hidden
   @extend .br20
 
   img
     @extend .br20
-    height: auto
 
 .sale-block
   margin-top: 20px
@@ -78,3 +77,19 @@
   line-height: 140%
   max-width: 780px
   margin-top: 45px
+
+.sale-slider
+  margin-bottom: 65px
+
+  .image
+    @extend .image-hover
+
+.swiper-navigation
+  &__center
+    button
+      top: 0
+      bottom: 0
+      margin: auto
+
+.image
+  @extend .image-round

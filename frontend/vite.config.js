@@ -16,6 +16,7 @@ export default defineConfig({
         outDir: '../docs',
         rollupOptions: {
             input: {
+                frontpage: resolve(__dirname, 'frontpage.html'),
                 about: resolve(__dirname, 'about.html'),
                 contacts: resolve(__dirname, 'contacts.html'),
                 career: resolve(__dirname, 'career.html'),

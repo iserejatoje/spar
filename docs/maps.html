@@ -5,10 +5,15 @@
     <link rel="icon" type="image/svg+xml" href="./vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spar</title>
-  <script type="module" crossorigin src="./assets/app.min10.js"></script>
-  <link rel="stylesheet" href="./assets/main.145900ae.css">
+  <script type="module" crossorigin src="./assets/app.min11.js"></script>
+  <link rel="stylesheet" href="./assets/main.73a883b4.css">
 </head>
 <body>
+
+<div class="svgs" style="position: absolute; opacity: 0; visibility: hidden;">
+    <svg id="tenge" width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><line y1="4" x2="10" y2="4" stroke="black" stroke-width="2"/><path d="M5 5L5 15.5" stroke="black" stroke-width="2"/><line y1="1" x2="10" y2="1" stroke="black" stroke-width="2"/></svg><svg id="tenge-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 11"><path d="M0,3H8V5H0ZM3,5H5v6H3ZM0,0H8V2H0Z"/></svg><svg id="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.59 13.25"><path d="M12.29.29a1 1 0 0 0 0 1.41l3.88 3.88H1a1 1 0 0 0 0 2h15.18l-3.88 3.88A1 1 0 1 0 13.54 13a1.21 1.21 0 0 0 .16-.16l5.6-5.59a1 1 0 0 0 0-1.4L13.7.29a1 1 0 0 0-1.41 0Z" /></svg>
+</div>
+
 <div class="app">
     <div class="app-inner">
         <header>
@@ -52,12 +57,6 @@
                 </nav>
             </div>
         </header>
-<style>
-    footer {
-        margin-top: 0 !important;
-    }
-</style>
-
 <div class="container">
     <div class="breadcrumbs">
         <a href="/">Главная</a>
@@ -69,54 +68,61 @@
 
 </div>
 
-<div class="map-wrapper">
-    <div id="map" class="map" data-pin="svg/pin.svg"></div>
-    <div class="container">
-        <div class="badge">
-            <form action="" autocomplete="off" method="get" enctype="application/x-www-form-urlencoded" class="search-form header-item">
-                <label class="search-label">
-                    <input type="text" name="q" placeholder="Поиск по адресу" class="search-input">
-                    <button class="search-button" type="button">
-                        <svg width="20" height="21" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 4.5a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-6 4a6 6 0 1 1 10.89 3.48l4.82 4.81a1 1 0 0 1-1.42 1.42l-4.81-4.82A6 6 0 0 1 2 8.5Z" fill="#B6BDC0"></path></svg>
-                    </button>
-                </label>
-                <button class="map-filter__button">Фильтры <svg width="12" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.23.79 6.1 4.67 9.99.79a1 1 0 1 1 1.4 1.41L6.82 6.79a1 1 0 0 1-1.41 0L.8 2.2A1 1 0 0 1 .8.79a1.02 1.02 0 0 1 1.43 0Z" fill="#101010"/></svg></button>
-            </form>
-            <div class="scroll-inner" data-simplebar data-simplebar-auto-hide="false">
-                <div class="map-item">
-                    <div class="shop-name">EUROSPAR</div>
-                    <div class="shop-address">Алматы, ул. Абая, 156</div>
-                    <div class="shop-time">9:00-23:00</div>
-                </div>
-                <div class="map-item">
-                    <div class="shop-name">EUROSPAR</div>
-                    <div class="shop-address">Алматы, ул. Абая, 156</div>
-                    <div class="shop-time">9:00-23:00</div>
-                </div>
-                <div class="map-item">
-                    <div class="shop-name">EUROSPAR</div>
-                    <div class="shop-address">Алматы, ул. Абая, 156</div>
-                    <div class="shop-time">9:00-23:00</div>
-                </div>
-                <div class="map-item">
-                    <div class="shop-name">EUROSPAR</div>
-                    <div class="shop-address">Алматы, ул. Абая, 156</div>
-                    <div class="shop-time">9:00-23:00</div>
-                </div>
-                <div class="map-item">
-                    <div class="shop-name">EUROSPAR</div>
-                    <div class="shop-address">Алматы, ул. Абая, 156</div>
-                    <div class="shop-time">9:00-23:00</div>
-                </div>
-                <div class="map-item">
-                    <div class="shop-name">EUROSPAR</div>
-                    <div class="shop-address">Алматы, ул. Абая, 156</div>
-                    <div class="shop-time">9:00-23:00</div>
+<div class="maxi-map">
+    <style>
+        footer {
+            margin-top: 0 !important;
+        }
+    </style>
+    
+    <div class="map-wrapper">
+        <div id="map" class="map" data-pin="svg/pin.svg"></div>
+        <div class="container">
+            <div class="badge">
+                <form action="" autocomplete="off" method="get" enctype="application/x-www-form-urlencoded" class="search-form header-item">
+                    <label class="search-label">
+                        <input type="text" name="q" placeholder="Поиск по адресу" class="search-input">
+                        <button class="search-button">
+                            <svg width="20" height="21" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 4.5a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-6 4a6 6 0 1 1 10.89 3.48l4.82 4.81a1 1 0 0 1-1.42 1.42l-4.81-4.82A6 6 0 0 1 2 8.5Z" fill="#B6BDC0"></path></svg>
+                        </button>
+                    </label>
+                    <button class="map-filter__button" type="button">Фильтры <svg width="12" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.23.79 6.1 4.67 9.99.79a1 1 0 1 1 1.4 1.41L6.82 6.79a1 1 0 0 1-1.41 0L.8 2.2A1 1 0 0 1 .8.79a1.02 1.02 0 0 1 1.43 0Z" fill="#101010"/></svg></button>
+                </form>
+                <div class="scroll-inner" data-simplebar data-simplebar-auto-hide="false">
+                    <div class="map-item">
+                        <div class="shop-name">EUROSPAR</div>
+                        <div class="shop-address">Алматы, ул. Абая, 156</div>
+                        <div class="shop-time">9:00-23:00</div>
+                    </div>
+                    <div class="map-item">
+                        <div class="shop-name">EUROSPAR</div>
+                        <div class="shop-address">Алматы, ул. Абая, 156</div>
+                        <div class="shop-time">9:00-23:00</div>
+                    </div>
+                    <div class="map-item">
+                        <div class="shop-name">EUROSPAR</div>
+                        <div class="shop-address">Алматы, ул. Абая, 156</div>
+                        <div class="shop-time">9:00-23:00</div>
+                    </div>
+                    <div class="map-item">
+                        <div class="shop-name">EUROSPAR</div>
+                        <div class="shop-address">Алматы, ул. Абая, 156</div>
+                        <div class="shop-time">9:00-23:00</div>
+                    </div>
+                    <div class="map-item">
+                        <div class="shop-name">EUROSPAR</div>
+                        <div class="shop-address">Алматы, ул. Абая, 156</div>
+                        <div class="shop-time">9:00-23:00</div>
+                    </div>
+                    <div class="map-item">
+                        <div class="shop-name">EUROSPAR</div>
+                        <div class="shop-address">Алматы, ул. Абая, 156</div>
+                        <div class="shop-time">9:00-23:00</div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+    </div></div>
 
 </div>
 <footer>

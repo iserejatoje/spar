@@ -1,0 +1,86 @@
+.shop-products
+  display: grid
+  grid-gap: 40px
+  grid-template-columns: repeat(5, 1fr)
+
+  &__frontpage
+    margin-bottom: 60px
+
+  .product
+    will-change: transform
+    transition: transform 120ms linear
+    background: $white
+    @extend .text-decoration-none
+    color: $p-black
+
+    &:hover
+      transform: translateY(-4px)
+
+    &-title
+      font-weight: 400
+      font-size: 14px
+      line-height: 120%
+      margin: 20px 0
+
+    &-price
+      font-weight: 800
+      font-size: 20px
+      line-height: 110%
+      display: flex
+      align-items: flex-end
+
+      svg
+        margin-left: 4px
+
+      &__current
+        display: flex
+        align-items: center
+
+        svg
+          transform: translateY(1px)
+
+      &__old
+        font-size: 13px
+        line-height: 118%
+        font-weight: bold
+        color: $p-gray
+        margin-left: 8px
+        display: flex
+        position: relative
+        &:after
+          content: ''
+          position: absolute
+          margin: auto
+          height: 1px
+          pointer-events: none
+          background: $p-gray
+          left: 0
+          right: 0
+          top: 0
+          bottom: 0
+
+        svg
+          fill: $p-gray
+          transform: translateY(1px)
+
+    &-data
+      padding-bottom: 15px
+      @extend .flex
+      @extend .align-items-center
+      justify-content: space-between
+
+  .date
+    font-weight: 700
+    font-size: 14px
+    line-height: 120%
+    color: $p-gray
+
+  .pin
+    background: $rose
+    color: $white
+    font-weight: 800
+    font-size: 14px
+    line-height: 17px
+    padding: 5px
+    display: inline-flex
+    border-radius: 5px

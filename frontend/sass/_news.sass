@@ -2,13 +2,6 @@
   .card
     @extend .text-decoration-none
 
-    img
-      transition: transform 180ms linear
-
-    &:hover
-      img
-        transform: scale(1.07)
-
   .date
     font-weight: 400
     font-size: 16px
@@ -23,8 +16,8 @@
     line-height: 120%
 
   .image
-    @extend .overflow
-    @extend .br20
+    @extend .image-round
+    @extend .image-hover
 
 .news-grid
   display: grid
@@ -32,7 +25,6 @@
   grid-gap: 30px 20px
 
 .news-detail__image
-  height: auto
   @extend .br20
 
 .news-date

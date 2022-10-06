@@ -1,81 +1,58 @@
 {{> header }}
 
+<div class="front-page__slider container">
+    <div class="large-slider swiper-container">
+        <div class="swiper-wrapper">
+            <a href="#" class="swiper-slide">
+                <img src="images/frontpage/slider.png" alt="" width="1181" height="441" decoding="async">
+            </a>
+            <a href="#" class="swiper-slide">
+                <img src="images/frontpage/slider.png" alt="" width="1181" height="441" decoding="async">
+            </a>
+            <a href="#" class="swiper-slide">
+                <img src="images/frontpage/slider.png" alt="" width="1181" height="441" decoding="async">
+            </a>
+        </div>
+    </div>
+    <div class="large-pagination swiper-pagination"></div>
+</div>
+
 <div class="container">
-    <div class="breadcrumbs">
-        <a href="/">Главная</a>
-        <div class="divider"></div>
-        <span>О компании</span>
+    <div class="modern">
+        <h2>Каталог скидок</h2>
+        <a href="" class="show-all"><span>Смотреть все</span> <svg width="20" height="13"><use xlink:href="#arrow"></use></svg></a>
+    </div>
+    <div class="shop-products shop-products__frontpage">
+        {{> product-card }}
+        {{> product-card }}
+        {{> product-card }}
+        {{> product-card }}
+        {{> product-card }}
+    </div>
+</div>
+<div class="container">
+    <div class="modern">
+        <h2>Новинки SPAR</h2>
+        <a href="" class="show-all"><span>Смотреть все</span> <svg width="20" height="13"><use xlink:href="#arrow"></use></svg></a>
     </div>
 
-    <h1>О компании</h1>
-
-    <img src="images/about/spar.jpg" width="1180" height="440" class="br20" alt="Spar" decoding="async">
-
-    <div class="text-left-side">
-        <p>SPAR - известная во всем мире сеть супермаркетов. SPAR работает в 48 странах на четырех континентах. Магазины SPAR можно встретить в Европе, Индии, Австралии, Китае и даже в Африке.</p>
-        <p>SPAR основан в 1932 году в Нидерландах Адриааном ван Веллом как добровольная сеть бакалейщиков. Это был ответ независимых ритейлеров появлению крупных торговых сетей в Европе.</p>
-        <p>Сегодня SPAR — это крупнейшая в мире добровольная сеть розничной торговли продуктами питания, насчитывающая более 13 тысяч магазинов. Ежедневно более 370 000 наших сотрудников обеспечивают передовой сервис для 14 миллионов покупателей</p>
+    <div class="shop-products shop-products__frontpage">
+        {{> product-card }}
+        {{> product-card }}
+        {{> product-card }}
+        {{> product-card }}
+        {{> product-card }}
     </div>
+</div>
 
-    <div class="legend">
-        <div class="legend-block br20">
-            <img src="svg/icon.svg" alt="" width="110" height="105" class="spruce" decoding="async">
-            <div class="legend-text">
-                <p>
-                    Начальное название магазина было DE SPAR, оно сложилось из первых букв девиза <b>«Door Eendrachtig Samenwerken Profiteren Allen Regelmatig»</b>, что переводится с нидерландского как «Все выигрывают от сотрудничества». Уже почти 90 лет компания SPAR следует этому принципу, открывая супермаркеты свежих продуктов по всему миру.
-                </p>
-
-                <p>
-                    Вскоре название сократилось до <b>SPAR</b>, которое на нидерландском языке означает «ель» — изящное вечнозеленое растение, священное дерево европейских народов, символ долгой жизни. С самого начала изображение этого дерева было использовано в качестве символа сети
-                </p>
-            </div>
+<div class="sale-slider">
+    <div class="container">
+        <div class="modern">
+            <h2>Акции</h2>
+            <a href="" class="show-all"><span>Смотреть все</span> <svg width="20" height="13"><use xlink:href="#arrow"></use></svg></a>
         </div>
-
-        <div class="history-photos">
-            <img class="history-photos__item" src="images/about/history_1.jpg" decoding="async" alt="" width="381" height="210">
-            <img class="history-photos__item" src="images/about/history_2.jpg" decoding="async" alt="" width="381" height="210">
-        </div>
-    </div>
-
-    <div class="production">
-        <h2>Свое производство</h2>
-
-        <div class="tab-list" data-component="production-page">
-            <button class="tab active">Пекарня</button>
-            <button class="tab">Кулинария</button>
-            <button class="tab">Food&Go</button>
-            <button class="tab">Кондитерка</button>
-        </div>
-
-        <div class="production-block">
-            <div class="production-page">
-                Каждый день выпекаем для вас свежий хлеб и ароматную выпечку. Для нашей хлебобулочной продукции мы пользуемся только проверенной рецептурой и самыми качественными ингредиентами
-
-                <img src="images/about/bread.jpg" alt="" width="375" height="250" decoding="async">
-            </div>
-            <div class="production-page" style="display: none;">
-                Каждый день выпекаем для вас свежий хлеб и ароматную выпечку. Для нашей хлебобулочной продукции мы пользуемся только проверенной рецептурой и самыми качественными ингредиентами
-                <img src="images/about/bread.jpg" alt="" width="375" height="250" decoding="async">
-
-            </div>
-            <div class="production-page" style="display: none;">
-                Каждый день выпекаем для вас свежий хлеб и ароматную выпечку. Для нашей хлебобулочной продукции мы пользуемся только проверенной рецептурой и самыми качественными ингредиентами
-                <img src="images/about/bread.jpg" alt="" width="375" height="250" decoding="async">
-
-            </div>
-            <div class="production-page" style="display: none;">
-                Каждый день выпекаем для вас свежий хлеб и ароматную выпечку. Для нашей хлебобулочной продукции мы пользуемся только проверенной рецептурой и самыми качественными ингредиентами
-                <img src="images/about/bread.jpg" alt="" width="375" height="250" decoding="async">
-
-            </div>
-        </div>
-    </div>
-
-    <div class="news-slider news-cards">
-        <h2>Новости компании</h2>
 
         <div class="relative">
-            <a href="" class="show-all show-all__slider">Смотреть все <img width="24" height="25" src="svg/arrow.svg" decoding="async" alt=""></a>
             <div class="swiper-container overflow">
                 <div class="swiper-wrapper">
 
@@ -83,40 +60,107 @@
                         <div class="image">
                             <img src="images/about/slider_1.jpg" width="381" height="210" alt="" decoding="async" loading="lazy">
                         </div>
-                        <div class="title">Доставка продуктов из магазинов</div>
-                        <div class="date">14 июня 2022</div>
                     </a>
                     <a href="#" class="swiper-slide card">
                         <div class="image">
                             <img src="images/about/slider_2.jpg" width="381" height="210" alt="" decoding="async" loading="lazy">
                         </div>
-                        <div class="title">Доставка продуктов из магазинов</div>
-                        <div class="date">14 июня 2022</div>
                     </a>
                     <a href="#" class="swiper-slide card">
                         <div class="image">
                             <img src="images/about/slider_3.jpg" width="382" height="210" alt="" decoding="async" loading="lazy">
                         </div>
-                        <div class="title">Доставка продуктов из магазинов</div>
-                        <div class="date">14 июня 2022</div>
                     </a>
                     <a href="#" class="swiper-slide card">
                         <div class="image">
                             <img src="images/about/slider_1.jpg" width="381" height="210" alt="" decoding="async" loading="lazy">
                         </div>
-                        <div class="title">Доставка продуктов из магазинов</div>
-                        <div class="date">14 июня 2022</div>
                     </a>
 
                 </div>
             </div>
+
+            <div class="swiper-navigation swiper-navigation__center">
+                <button class="prev"><svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m15.73 19-7-7 7-7" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                <button class="next"><svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m8.73 19 7-7-7-7" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            </div>
         </div>
 
-        <div class="swiper-navigation">
-            <button class="prev"><svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m15.73 19-7-7 7-7" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-            <button class="next"><svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m8.73 19 7-7-7-7" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        </div>
     </div>
+</div>
+
+<div class="container">
+    {{> production}}
+</div>
+
+<div class="media-block">
+    <div class="container">
+        <div class="modern">
+            <h2>Медиа</h2>
+            <a href="" class="show-all"><span>Смотреть все</span> <svg width="20" height="13"><use xlink:href="#arrow"></use></svg></a>
+        </div>
+        
+        <div class="media-hero">
+            <div class="picture">
+                <img decoding="async" loading="lazy" src="/images/frontpage/media.jpg" width="601" height="400" alt="">
+            </div>
+
+            <div class="media-welcome">
+                <div class="title">Дебют в Казахстане</div>
+                <div class="description">Открытие первого SPAR  в Алматы</div>
+                <a href="#" class="btn btn-lime">Перейти!</a>
+            </div>
+        </div>
+
+        <div class="media-quick">
+            <a href="#" class="card">
+                <div class="image">
+                    <img src="/images/frontpage/media-quick.jpg" loading="lazy" width="181" height="150" decoding="async" alt="Доставка продуктов из магазинов">
+                </div>
+                <div class="content">
+                    <div class="tags">
+                        <div class="tag tag--gray">Новости</div>
+                    </div>
+                    <div class="title">Доставка продуктов из магазинов</div>
+                    <div class="date">14 июня 2022</div>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div class="image">
+                    <img src="/images/frontpage/media-quick.jpg" loading="lazy" width="181" height="150" decoding="async" alt="Доставка продуктов из магазинов">
+                </div>
+                <div class="content">
+                    <div class="tags">
+                        <div class="tag tag--gray">Новости</div>
+                        <div class="tag tag--rose">#forkids</div>
+                    </div>
+                    <div class="title">Доставка продуктов из магазинов</div>
+                    <div class="date">14 июня 2022</div>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div class="image">
+                    <img src="/images/frontpage/media-quick.jpg" loading="lazy" width="181" height="150" decoding="async" alt="Доставка продуктов из магазинов">
+                </div>
+                <div class="content">
+                    <div class="tags">
+                        <div class="tag tag--sky">#for health</div>
+                    </div>
+                    <div class="title">Доставка продуктов из магазинов</div>
+                    <div class="date">14 июня 2022</div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <h2>Адреса магазинов</h2>
+</div>
+
+<div class="mini-map">
+    {{> map }}
 </div>
 
 {{> footer }}

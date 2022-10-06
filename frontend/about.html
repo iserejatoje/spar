@@ -37,78 +37,47 @@
         </div>
     </div>
 
-    <div class="production">
-        <h2>Свое производство</h2>
-
-        <div class="tab-list" data-component="production-page">
-            <button class="tab active">Пекарня</button>
-            <button class="tab">Кулинария</button>
-            <button class="tab">Food&Go</button>
-            <button class="tab">Кондитерка</button>
-        </div>
-
-        <div class="production-block">
-            <div class="production-page">
-                Каждый день выпекаем для вас свежий хлеб и ароматную выпечку. Для нашей хлебобулочной продукции мы пользуемся только проверенной рецептурой и самыми качественными ингредиентами
-
-                <img src="images/about/bread.jpg" alt="" width="375" height="250" decoding="async">
-            </div>
-            <div class="production-page" style="display: none;">
-                Каждый день выпекаем для вас свежий хлеб и ароматную выпечку. Для нашей хлебобулочной продукции мы пользуемся только проверенной рецептурой и самыми качественными ингредиентами
-                <img src="images/about/bread.jpg" alt="" width="375" height="250" decoding="async">
-
-            </div>
-            <div class="production-page" style="display: none;">
-                Каждый день выпекаем для вас свежий хлеб и ароматную выпечку. Для нашей хлебобулочной продукции мы пользуемся только проверенной рецептурой и самыми качественными ингредиентами
-                <img src="images/about/bread.jpg" alt="" width="375" height="250" decoding="async">
-
-            </div>
-            <div class="production-page" style="display: none;">
-                Каждый день выпекаем для вас свежий хлеб и ароматную выпечку. Для нашей хлебобулочной продукции мы пользуемся только проверенной рецептурой и самыми качественными ингредиентами
-                <img src="images/about/bread.jpg" alt="" width="375" height="250" decoding="async">
-
-            </div>
-        </div>
-    </div>
+    {{> production}}
 
     <div class="news-slider news-cards">
-        <h2>Новости компании</h2>
 
-        <div class="relative">
-            <a href="" class="show-all show-all__slider">Смотреть все <img width="24" height="25" src="svg/arrow.svg" decoding="async" alt=""></a>
-            <div class="swiper-container overflow">
-                <div class="swiper-wrapper">
+        <div class="modern">
+            <h2>Новости компании</h2>
+            <a href="" class="show-all"><span>Смотреть все</span> <svg width="20" height="13"><use xlink:href="#arrow"></use></svg></a>
+        </div>
 
-                    <a href="#" class="swiper-slide card">
-                        <div class="image">
-                            <img src="images/about/slider_1.jpg" width="381" height="210" alt="" decoding="async" loading="lazy">
-                        </div>
-                        <div class="title">Доставка продуктов из магазинов</div>
-                        <div class="date">14 июня 2022</div>
-                    </a>
-                    <a href="#" class="swiper-slide card">
-                        <div class="image">
-                            <img src="images/about/slider_2.jpg" width="381" height="210" alt="" decoding="async" loading="lazy">
-                        </div>
-                        <div class="title">Доставка продуктов из магазинов</div>
-                        <div class="date">14 июня 2022</div>
-                    </a>
-                    <a href="#" class="swiper-slide card">
-                        <div class="image">
-                            <img src="images/about/slider_3.jpg" width="382" height="210" alt="" decoding="async" loading="lazy">
-                        </div>
-                        <div class="title">Доставка продуктов из магазинов</div>
-                        <div class="date">14 июня 2022</div>
-                    </a>
-                    <a href="#" class="swiper-slide card">
-                        <div class="image">
-                            <img src="images/about/slider_1.jpg" width="381" height="210" alt="" decoding="async" loading="lazy">
-                        </div>
-                        <div class="title">Доставка продуктов из магазинов</div>
-                        <div class="date">14 июня 2022</div>
-                    </a>
+        <div class="swiper-container overflow">
+            <div class="swiper-wrapper">
 
-                </div>
+                <a href="#" class="swiper-slide card">
+                    <div class="image">
+                        <img src="images/about/slider_1.jpg" width="381" height="210" alt="" decoding="async" loading="lazy">
+                    </div>
+                    <div class="title">Доставка продуктов из магазинов</div>
+                    <div class="date">14 июня 2022</div>
+                </a>
+                <a href="#" class="swiper-slide card">
+                    <div class="image">
+                        <img src="images/about/slider_2.jpg" width="381" height="210" alt="" decoding="async" loading="lazy">
+                    </div>
+                    <div class="title">Доставка продуктов из магазинов</div>
+                    <div class="date">14 июня 2022</div>
+                </a>
+                <a href="#" class="swiper-slide card">
+                    <div class="image">
+                        <img src="images/about/slider_3.jpg" width="382" height="210" alt="" decoding="async" loading="lazy">
+                    </div>
+                    <div class="title">Доставка продуктов из магазинов</div>
+                    <div class="date">14 июня 2022</div>
+                </a>
+                <a href="#" class="swiper-slide card">
+                    <div class="image">
+                        <img src="images/about/slider_1.jpg" width="381" height="210" alt="" decoding="async" loading="lazy">
+                    </div>
+                    <div class="title">Доставка продуктов из магазинов</div>
+                    <div class="date">14 июня 2022</div>
+                </a>
+
             </div>
         </div>
 
