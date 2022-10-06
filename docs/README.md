@@ -9,3 +9,5 @@ SPAR
 [policy] (https://iserejatoje.github.io/spar/policy.html)
 [sale] (https://iserejatoje.github.io/spar/sale.html)
 [sales] (https://iserejatoje.github.io/spar/sales.html)
+
+Made with ❤️
