@@ -24,6 +24,7 @@ export default defineConfig({
                 policy: resolve(__dirname, 'policy.html'),
                 sale: resolve(__dirname, 'sale.html'),
                 sales: resolve(__dirname, 'sales.html'),
+                maps: resolve(__dirname, 'maps.html'),
             },
             output: {
                 chunkFileNames: 'assets/app.min.js',

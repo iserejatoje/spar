@@ -16,6 +16,7 @@
     "imask": "^6.4.3",
     "vite-plugin-handlebars": "^1.6.0",
     "swiper": "^8.4.2",
-    "jquery": "^3.6.1"
+    "jquery": "^3.6.1",
+    "simplebar": "^5.3.9"
   }
 }

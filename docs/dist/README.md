@@ -11,7 +11,6 @@ _SPAR - известная во всем мире сеть супермарке�
 - [policy](https://iserejatoje.github.io/spar/policy.html)
 - [sales](https://iserejatoje.github.io/spar/sales.html)
 - [sale](https://iserejatoje.github.io/spar/sale.html)
-- [maps](https://iserejatoje.github.io/spar/maps.html)
 
 Made with ❤️ Atom Web Studio
 
