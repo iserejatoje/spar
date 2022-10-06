@@ -1,0 +1,75 @@
+.legend
+  position: relative
+  display: flex
+  align-items: center
+  margin-bottom: 70px
+
+  &-block
+    margin-right: 290px
+    background: $legend
+    padding: 35px 100px
+    line-height: 150%
+    width: 100%
+    position: relative
+
+  .spruce
+    position: absolute
+    right: 60px
+    z-index: 2
+    pointer-events: none
+    user-select: none
+
+  &-text
+    max-width: 504px
+
+    p
+      &:not(:last-child)
+        margin-bottom: 1.6em
+
+.history-photos
+  position: absolute
+  right: 0
+
+  img
+    @extend .br20
+
+    &:not(:last-child)
+      margin-bottom: 10px
+
+.news-slider
+  margin-top: 45px
+  margin-bottom: 40px
+  position: relative
+
+  .swiper-navigation
+    .prev
+      left: -24px
+
+    .next
+      right: -24px
+
+    button
+      position: absolute
+      top: 134px
+      z-index: 10
+
+.production
+  margin-bottom: 100px
+  position: relative
+
+  .tab-list
+    padding-top: 25px
+
+  &-block
+    margin-top: 25px
+
+  &-page
+    max-width: 510px
+    font-weight: 400
+    font-size: 16px
+    line-height: 150%
+
+    img
+      position: absolute
+      right: 0
+      top: 50px

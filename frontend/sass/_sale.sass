@@ -1,0 +1,80 @@
+.sale-slider
+  overflow: hidden
+  @extend .br20
+
+  img
+    @extend .br20
+    height: auto
+
+.sale-block
+  margin-top: 20px
+
+  .sale-grid
+    margin-top: 20px
+    display: grid
+    grid-gap: 30px 20px
+    grid-template-columns: repeat(3, 1fr)
+
+    img
+      @extend .br20
+
+.sale-period
+  color: $s-green
+  font-size: 22px
+  font-weight: bold
+  line-height: 140%
+  margin: 40px 0
+
+.sale-details
+  max-width: 880px
+
+.sale-steps
+  counter-reset: number
+
+  .step
+    line-height: 150%
+    position: relative
+    counter-increment: number
+    padding-left: 40px
+    min-height: 40px
+
+    a
+      color: $s-green
+      font-weight: 800
+
+    &:not(:last-child)
+      margin-bottom: 25px
+
+    &:before
+      content: counter(number)
+      font-size: 35px
+      left: 0
+      top: -2px
+      color: $s-green
+      font-weight: bold
+      position: absolute
+
+.sale-bottom
+  margin-top: 40px
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: flex-start
+
+  a
+    @extend .text-decoration-none
+    color: $p-gray
+    font-weight: bold
+    font-size: 18px
+    line-height: 145%
+    border-bottom: 2px solid
+
+    &:not(:last-child)
+      margin-bottom: 6px
+
+.sale-description
+  font-weight: 400
+  font-size: 16px
+  line-height: 140%
+  max-width: 780px
+  margin-top: 45px

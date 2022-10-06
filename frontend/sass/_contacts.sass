@@ -1,0 +1,41 @@
+.contacts-row
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+
+.contacts-list
+  max-width: 580px
+  width: 100%
+
+  &__item
+    display: flex
+    position: relative
+    line-height: 150%
+    font-size: 16px
+    &:not(:first-child)
+      padding: 20px 0 30px 0
+    &:first-child
+      padding: 0 0 30px 0
+
+    a
+      @extend .text-decoration-none
+      color: $p-black
+      @extend .bold
+      &:hover
+        color: $p-green
+
+    &:not(:last-child)
+      &:after
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        right: 0
+        height: 2px
+        background: $s-gray
+        border-radius: 3px
+
+  &__item-place
+    font-weight: bold
+    line-height: 150%
+    width: 50%

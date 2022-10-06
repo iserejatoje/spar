@@ -1,0 +1,21 @@
+{
+  "name": "spar",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^3.1.4",
+    "sass": "^1.55.0",
+    "postcss": "^8.4.17",
+    "autoprefixer": "^10.4.12",
+    "imask": "^6.4.3",
+    "vite-plugin-handlebars": "^1.6.0",
+    "swiper": "^8.4.2",
+    "jquery": "^3.6.1"
+  }
+}

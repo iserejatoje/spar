@@ -1,0 +1,42 @@
+.news-cards
+  .card
+    @extend .text-decoration-none
+
+    img
+      transition: transform 180ms linear
+
+    &:hover
+      img
+        transform: scale(1.07)
+
+  .date
+    font-weight: 400
+    font-size: 16px
+    line-height: 120%
+    color: $p-gray
+
+  .title
+    color: $p-black
+    margin: 15px 0 12px 0
+    font-weight: 700
+    font-size: 18px
+    line-height: 120%
+
+  .image
+    @extend .overflow
+    @extend .br20
+
+.news-grid
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-gap: 30px 20px
+
+.news-detail__image
+  height: auto
+  @extend .br20
+
+.news-date
+  font-weight: 500
+  color: $p-gray
+  line-height: 140%
+  margin-top: 18px

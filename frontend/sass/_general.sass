@@ -1,0 +1,299 @@
+html,
+body
+  height: 100%
+
+body
+  font-family: 'Lato', sans-serif
+
+*,
+*:after,
+*:before
+  box-sizing: border-box
+
+svg
+  display: block
+
+button
+  cursor: pointer
+
+.app
+  display: flex
+  flex-direction: column
+  min-height: 100%
+
+  &-inner
+    flex: 1 0 auto
+
+  footer
+    flex: 0 0 auto
+    margin-top: 65px
+
+.container
+  max-width: 1210px
+  margin-left: auto
+  margin-right: auto
+  padding-left: 15px
+  padding-right: 15px
+  width: 100%
+
+.container-medium
+  max-width: 890px
+  margin-left: auto
+  margin-right: auto
+  padding-left: 15px
+  padding-right: 15px
+  width: 100%
+
+img
+  display: block
+  max-width: 100%
+
+.logotype
+  img
+    height: auto
+
+header
+  padding-top: 60px
+  box-shadow: 0 4px 30px rgba(182, 182, 182, 0.4)
+  position: sticky
+  top: 0
+  z-index: 5
+  background: $white
+
+  nav
+    padding: 25px 0
+
+  ul
+    list-style: none
+    margin: 0
+    padding: 0
+
+    a
+      @extend .text-decoration-none
+      font-weight: 700
+      font-size: 18px
+      line-height: 120%
+      color: $p-black
+      padding: 15px 0
+
+      &.active,
+      &:hover
+        color: $p-green
+
+    li
+      &:not(:last-child)
+        margin-right: 60px
+
+  .header-item
+    &:not(:last-child)
+      margin-right: 20px
+
+footer
+  padding: 40px 0 60px 0
+  background: $s-gray
+  
+  .social
+    display: flex
+    margin-top: 30px
+
+    img
+      display: block
+
+    a
+      &:not(:last-child)
+        margin-right: 20px
+
+  .footer-column
+    width: 50%
+    align-items: flex-start
+
+  .footer-item
+
+    a
+      @extend .text-decoration-none
+      color: $p-black
+
+    &:nth-child(1)
+      max-width: 300px
+      width: 100%
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+
+    &:nth-child(2)
+      display: flex
+      max-width: 420px
+      width: 100%
+
+      a
+        @extend .medium
+        @extend .hover-green
+
+        &:not(:last-child)
+          margin-bottom: 14px
+
+    &:nth-child(3)
+      margin-left: auto
+      max-width: 340px
+      width: 100%
+
+    .phone-description
+      font-size: 14px
+      line-height: 150%
+
+    .phone
+      font-size: 21px
+      line-height: 25px
+      margin: 12px 0
+      display: inline-block
+      @extend .hover-green
+
+  .bold
+    margin-top: 40px
+    margin-bottom: 20px
+    max-width: 220px
+
+p
+  &:first-child
+    margin-top: 0
+  &:last-child
+    margin-bottom: 0
+
+.breadcrumbs
+  margin-top: 35px
+  font-size: 16px
+  line-height: 120%
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  color: $p-gray
+
+  span
+    @extend .heavy
+
+  a
+    @extend .text-decoration-none
+    color: $p-gray
+
+    &:hover
+      color: $p-green
+
+  .divider
+    width: 1px
+    height: 15px
+    margin: 0 15px
+    background: $p-gray
+    transform: translateY(1px)
+
+.overflow
+  overflow: hidden
+
+.tab-list
+  .tab
+    font-weight: 500
+    background: transparent
+    padding: 0
+    border: 0
+    outline: 0
+    font-size: 14px
+    line-height: 20px
+    position: relative
+    height: 60px
+    @extend .hover-green
+
+    &.active
+      color: $s-green
+      font-weight: 800
+
+      &:after
+        content: ''
+        height: 4px
+        background: $s-green
+        border-radius: 3px 3px 0 0
+        position: absolute
+        bottom: 0
+        left: 0
+        right: 0
+
+    &:not(:last-child)
+      margin-right: 30px
+
+.hero
+  padding: 40px 35px
+  background: $s-gray
+  @extend .br20
+  max-width: 290px
+  width: 100%
+  min-height: 270px
+
+  button
+    margin-top: 20px
+
+  &-bottom
+    color: $p-gray
+    max-width: 150px
+    margin-top: 80px
+    line-height: 120%
+
+    a
+      color: $p-gray
+      @extend .bold
+      @extend .text-decoration-none
+
+  &-title
+    font-weight: 700
+    font-size: 16px
+    line-height: 120%
+    max-width: 150px
+
+.swiper-pagination
+  display: flex
+  justify-content: center
+  margin-top: 25px
+
+  .swiper-pagination-bullet
+    border: 2px solid $p-gray
+
+    &-active
+      border: 2px solid $s-green
+      &:after
+        background: $s-green
+    width: 20px
+    height: 20px
+    @extend .br50
+    position: relative
+
+    &:not(:last-child)
+      margin-right: 15px
+
+    &:after
+      content: ''
+      @extend .br50
+      position: absolute
+      left: 0
+      top: 0
+      right: 0
+      margin: auto
+      bottom: 0
+      width: 10px
+      height: 10px
+
+.text-content
+  line-height: 160%
+  font-size: 14px
+
+.show-all
+  &__slider
+    z-index: 2
+    right: 0
+    top: -45px
+    position: absolute
+  display: flex
+  align-items: center
+  line-height: 120%
+  color: $p-black
+  @extend .text-decoration-none
+
+  img
+    transform: translateY(2px)
+    margin-left: 12px

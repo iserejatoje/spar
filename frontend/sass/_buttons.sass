@@ -1,0 +1,83 @@
+header
+  .btn
+    padding: 10px 20px
+    border-radius: 40px
+    border: 1px solid $p-gray
+    height: 48px
+    @extend .flex-center
+    font-size: 16px
+    font-weight: 800
+    @extend .text-decoration-none
+    color: $p-gray
+    transition: border 120ms linear, color 120ms linear
+
+    svg
+      transition: fill 120ms linear
+      fill: $p-gray
+
+    &:hover
+      border-color: $s-green
+      color: $s-green
+
+      svg
+        fill: $s-green
+
+    span
+      margin-left: 10px
+
+.btn
+  border-radius: 40px
+  font-weight: 800
+  font-size: 16px
+  line-height: 150%
+  padding: 0 30px
+  user-select: none
+
+  &-lime
+    height: 45px
+    border: 1px solid $s-green
+    color: $s-green
+    background: $white
+    transition: border-color 120ms linear, color 120ms linear
+
+    &:active,
+    &:hover
+      color: $p-green
+      border-color: $p-green
+
+
+  &-lime__fill
+    height: 45px
+    color: $white
+    background: $s-green
+    transition: background 120ms linear
+    border: 0
+
+    &:active,
+    &:hover
+      background: $p-green
+
+
+  &-gray
+    height: 45px
+    border: 1px solid $p-gray
+    color: $p-gray
+    background: $white
+    transition: border-color 120ms linear, color 120ms linear
+
+    &:active,
+    &:hover
+      color: #676767
+      border-color: #676767
+
+  &-green
+    background: $white
+    border: 1px solid $s-green
+    color: $s-green
+    height: 45px
+    transition: border-color 120ms linear, color 120ms linear
+
+    &:active,
+    &:hover
+      border-color: $p-green
+      color: $p-green
