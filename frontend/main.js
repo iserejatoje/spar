@@ -5,5 +5,3 @@ import './js/swiper.js'
 import './js/imask.js'
 import './js/map.js'
 import './js/simplebar.js'
-
-console.log('main.js')

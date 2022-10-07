@@ -1,3 +1,7 @@
 .idea
-local/
-local/*
+/bitrix/
+/local/modules/
+/local/php_interface/
+/upload/
+.htaccess
+urlrewrite.php

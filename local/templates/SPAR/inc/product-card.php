@@ -1,0 +1,19 @@
+<a href="#" class="product">
+    <div class="product-data">
+        <div class="pin">-30%</div>
+        <div class="date">до 22.10</div>
+    </div>
+    <div class="product-image">
+        <img src="./assets/barni.32d69f5f.jpg" width="1024" height="625" decoding="async" alt="">
+    </div>
+    <div class="product-title">
+        ПЕЧЕНЬКА<br/>
+        Бисквит с кусочками oreo 180 гр
+    </div>
+    <div class="product-price">
+        <div class="product-price__current">
+            900 <svg width="10" height="14"><use xlink:href="#tenge"></use></svg>
+        </div>
+        <div class="product-price__old">5320 <svg width="8" height="11"><use xlink:href="#tenge-xs"></use></svg></div>
+    </div>
+</a>

@@ -37,8 +37,11 @@ export default defineConfig({
                 maps: resolve(__dirname, 'maps.html'),
             },
             output: {
+                assetFileNames: (assetInfo) => {
+                    return `assets/app.min[extname]`;
+                },
                 chunkFileNames: 'assets/app.min.js',
-                entryFileNames: 'assets/app.min.js',
+                entryFileNames: 'assets/[name].js',
             },
         },
         css: {
