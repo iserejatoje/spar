@@ -2,12 +2,21 @@ import autoprefixer from "autoprefixer"
 import {defineConfig} from "vite"
 import {resolve} from 'path';
 import handlebars from 'vite-plugin-handlebars'
+import { viteStaticCopy } from 'vite-plugin-static-copy'
 
 export default defineConfig({
     base: '',
     root: './',
     publicDir: 'public',
     plugins: [
+        viteStaticCopy({
+            targets: [
+                {
+                    src: 'README.md',
+                    dest: './'
+                }
+            ]
+        }),
         handlebars({
             partialDirectory: resolve(__dirname, 'inc'),
         }),
