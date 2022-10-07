@@ -62,21 +62,15 @@ form
     &:not(.active)
       color: $p-gray
 
-  input[type="text"],
-  input[type="tel"],
-  input[type="password"],
-  input[type="datetime-local"],
-  input[type="date"],
-  input[type="search"],
-  input[type="email"],
-  input[type="time"],
+  .form-input,
   select
-    height: 45px
+    &__base
+      height: 46px
+      padding: 0 16px
     border-radius: 40px
     width: 100%
     background-color: $s-gray
     border: 0
-    padding: 0 16px
     outline: none
     transition: box-shadow 120ms linear
 

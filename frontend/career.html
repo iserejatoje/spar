@@ -96,13 +96,13 @@
                 <div class="title">Оставьте заявку и мы перезвоним</div>
 
                 <form method="post" enctype="multipart/form-data" action="" class="form">
-                    <label><input type="text" placeholder="Имя и Фамилия"></label>
-                    <label><input type="tel" placeholder="Телефон"></label>
-                    <label><select name="city">
+                    <label><input type="text" class="form-input form-input__base" placeholder="Имя и Фамилия"></label>
+                    <label><input type="tel" class="form-input form-input__base" placeholder="Телефон"></label>
+                    <label><select name="city" class="form-input form-input__base">
                         <option value="0">Выберите город</option>
                         <option value="1">111</option>
                     </select></label>
-                    <label><select name="job">
+                    <label><select name="job" class="form-input form-input__base">
                         <option value="0">Выберите должность</option>
                         <option value="1">1111</option>
                     </select></label>
@@ -136,7 +136,8 @@
                     Присоединяйтесь к нашей команде первооткрывателей!
                 </div>
 
-                <a href="" class="show-all">Подробнее о компании <img width="24" height="25" src="svg/arrow.svg" decoding="async" alt=""></a>
+                <a href="" class="show-all"><span>Подробнее о компании </span> <svg width="20" height="13"><use xlink:href="#arrow"></use></svg></a>
+
             </div>
 
             <div class="hero hero-stiky">
