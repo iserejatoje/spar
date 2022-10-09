@@ -1,0 +1,103 @@
+body.overflow
+  margin-right: var(--scrollbar-width)
+
+body.opened
+  .overlay-back
+    opacity: 1
+    visibility: visible
+
+  .overlay.shown
+    opacity: 1
+    visibility: visible
+
+  .popup
+    transform: translateY(0)
+
+.app
+  .popup
+    transform: translateY(-25px)
+    transition: transform 240ms linear
+
+  .overlay-back
+    background: transparentize($p-black, .4)
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    z-index: 10
+    @extend .flex-center
+    opacity: 0
+    visibility: hidden
+    transition: opacity 200ms linear, visibility 200ms linear
+
+  .overlay
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    z-index: 10
+    @extend .flex-center
+    opacity: 0
+    visibility: hidden
+    transition: opacity 200ms linear, visibility 200ms linear
+    pointer-events: none
+
+    .popup
+      pointer-events: all
+
+  .popup-content
+    padding-top: 30px
+    padding-bottom: 35px
+
+  .popup-thanks
+    .popup-content
+      line-height: 160%
+      text-align: center
+      font-weight: 400
+      font-size: 16px
+
+  .popup-title
+    display: flex
+    justify-content: center
+    position: relative
+    font-weight: 700
+    font-size: 25px
+    line-height: 32px
+
+  .popup-close
+    background: transparent
+    padding: 0
+    width: 32px
+    height: 32px
+    border: none
+    @extend .flex-center
+    position: absolute
+    right: 0
+
+    path
+      transition: stroke 150ms linear
+      stroke: $p-gray
+
+    &:hover
+      path
+        stroke: $p-green
+
+  .overlay
+    overflow: auto
+    padding: 30px 0
+
+  .popup
+    position: relative
+    margin: auto
+    @extend .br20
+    background: $white
+    padding: 30px 60px
+    max-width: 680px
+    width: 100%
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 15

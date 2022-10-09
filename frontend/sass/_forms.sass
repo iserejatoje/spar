@@ -1,18 +1,42 @@
 .app form
 
+  .input-error
+    box-shadow: inset 0 0 0 1px $p-red !important
+    background-color: $white !important
+
+  .error-block
+    font-weight: 400
+    font-size: 14px
+    line-height: 19px
+    display: none
+    color: $p-red
+    margin-top: 8px
+    pointer-events: none
+    user-select: none
+
   .send-button
     margin-top: 25px
     max-width: 160px
     width: 100%
 
   .checkbox
-    font-size: 11px
     position: relative
     padding-left: 30px
-    line-height: 160%
     cursor: pointer
     display: inline-block
     user-select: none
+
+    .checkbox-wrapper
+      display: inline-flex
+      font-size: 11px
+      line-height: 160%
+
+    .error-block
+      transform: translateX(-30px)
+
+    &:hover
+      span
+        border-color: $s-green
 
     a
       @extend .text-decoration-none
@@ -31,13 +55,13 @@
 
       &:checked + span
         border-color: $s-green
-        background: $s-green url("data:image/svg+xml,%3Csvg width='14' height='10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m1 4.65 4 4M5.15 8.5l7.5-7.5' stroke='%23fff' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center / 12px
+        background: $s-green url("data:image/svg+xml,%3Csvg width='14' height='10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m1 4.65 4 4M5.15 8.5l7.5-7.5' stroke='%23fff' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat 1px 2px/13px 10px
 
-    span
+    input + span
       position: absolute
       left: 0
       border-radius: 3px
-      top: 0
+      top: 1px
       width: 18px
       height: 18px
       border: 2px solid $p-gray
@@ -72,7 +96,6 @@
     background-color: $s-gray
     border: 0
     outline: none
-    transition: box-shadow 120ms linear
 
     &:focus
       box-shadow: inset 0 0 0 1px $p-gray
@@ -97,7 +120,12 @@
     input
       opacity: 0
       position: absolute
-      visibility: hidden
       width: 10px
       height: 10px
 
+.app
+  .form
+    &.waiting
+      opacity: .5
+      pointer-events: none
+      user-select: none

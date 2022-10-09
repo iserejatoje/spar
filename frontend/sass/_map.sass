@@ -19,6 +19,13 @@
 
 .map-item
   min-height: 80px
+  display: block
+  text-decoration: none
+  color: $p-black
+
+  &:hover
+    .shop-name
+      color: $p-green
 
   &:not(:last-child)
     border-bottom: 2px solid $s-gray
@@ -85,7 +92,7 @@
         height: 46px
 
   .scroll-inner
-    height: 260px
+    height: 262px
     overflow: auto
 
     .simplebar-content

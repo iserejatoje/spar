@@ -6,7 +6,7 @@ if( !defined( "B_PROLOG_INCLUDED" ) || B_PROLOG_INCLUDED !== true ) die();
 <html lang="ru">
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><?=$APPLICATION->ShowTitle();?></title>
     <?
@@ -30,7 +30,7 @@ $APPLICATION->ShowPanel();
     <div class="app-inner">
         <header>
             <div class="container flex align-items-center">
-                <a aria-label="На главную" href="#" class="logotype header-item">
+                <a aria-label="На главную" href="/" class="logotype header-item">
                     <img src="<?=SITE_TEMPLATE_PATH;?>/svg/logo.svg" width="281" height="44" decoding="async" alt="Spar">
                 </a>
 

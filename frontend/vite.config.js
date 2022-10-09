@@ -49,8 +49,7 @@ export default defineConfig({
                 plugins: [
                     autoprefixer()
                 ],
-                sourceMap: true
-            },
-        },
+            }
+        }
     }
 })

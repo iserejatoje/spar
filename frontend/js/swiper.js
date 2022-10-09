@@ -27,9 +27,15 @@ let newsSliderParams = {
 new Swiper('.news-slider .swiper-container', newsSliderParams)
 
 let largeSliderParams = {
-    speed: 800,
-    modules: [Navigation, Pagination],
+    watchOverflow: true,
+    speed: 1500,
+    modules: [Navigation, Pagination, Autoplay],
     slidesPerView: 1,
+    autoplay: {
+        delay: 8000,
+        pauseOnMouseEnter: true,
+        disableOnInteraction: false,
+    },
     spaceBetween: 10,
     pagination: {
         el: ".large-pagination",
@@ -42,6 +48,7 @@ let largeSliderParams = {
 new Swiper('.large-slider', largeSliderParams)
 
 let salesSliderParams = {
+    watchOverflow: true,
     speed: 800,
     modules: [Navigation],
     breakpoints: {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./vite.svg" />
@@ -152,17 +152,25 @@
             <div class="vacancy-form">
                 <div class="title">Оставьте заявку и мы перезвоним</div>
 
-                <form method="post" enctype="multipart/form-data" action="" class="form">
-                    <label><input type="text" class="form-input form-input__base" placeholder="Имя и Фамилия"></label>
-                    <label><input type="tel" class="form-input form-input__base" placeholder="Телефон"></label>
-                    <label><select name="city" class="form-input form-input__base">
+                <form method="post" enctype="multipart/form-data" action="" class="form career-form">
+                    <label>
+                        <input type="text" class="form-input form-input__base" placeholder="Имя и Фамилия">
+                    </label>
+                    <label>
+                        <input type="tel" class="form-input form-input__base" placeholder="Телефон">
+                    </label>
+                    <label>
+                        <select name="city" class="form-input form-input__base">
                         <option value="0">Выберите город</option>
                         <option value="1">111</option>
-                    </select></label>
-                    <label><select name="job" class="form-input form-input__base">
-                        <option value="0">Выберите должность</option>
-                        <option value="1">1111</option>
-                    </select></label>
+                    </select>
+                    </label>
+                    <label>
+                        <select name="job" class="form-input form-input__base">
+                            <option value="0">Выберите должность</option>
+                            <option value="1">1111</option>
+                        </select>
+                    </label>
                     <label class="file-wrapper">
                         <svg width="33" height="33" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.35 14.31v6m0 0-3-3m3 3 3-3m2 8h-10a2 2 0 0 1-2-2v-14a2 2 0 0 1 2-2h5.58a1 1 0 0 1 .7.3l5.42 5.41a1 1 0 0 1 .3.7v9.6a2 2 0 0 1-2 2Z" stroke="#B6BDC0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                         <input type="file" name="file">
@@ -175,9 +183,9 @@
                         Соглашаюсь с условиями <a href="#">Политики конфиденциальности</a>
                     </label>
 
-                    <label class="center-block">
+                    <div class="center-block">
                         <button class="btn btn-lime__fill send-button">Отправить</button>
-                    </label>
+                    </div>
 
                 </form>
             </div>
@@ -210,7 +218,7 @@
 </div>
 
 </div>
-<footer>
+<footer class="footer">
     <div class="container flex">
         <div class="footer-item">
             <a aria-label="На главную" href="#" class="logotype header-item">
@@ -251,7 +259,40 @@
         </div>
     </div>
 </footer>
+
+<div class="overlay-back close-all"></div>
+<div class="overlay overlay-thanks">
+    <div class="popup popup-thanks">
+        <div class="popup-title">Обратная связь <button aria-label="Закрыть" class="popup-close close-all"><svg width="26" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m6.9 6.25 12.5 12.5m-12.5 0 12.5-12.5-12.5 12.5Z"  stroke-width="2.27" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+
+        <div class="popup-content">
+            Ваше сообщение отправлено!<br/>
+            Мы свяжемся с вами как только обработаем ваш запрос
+        </div>
+
+        <div class="center-block">
+            <button class="btn btn-lime__fill close-all close-all">Ок</button>
+        </div>
+    </div>
 </div>
+
+<div class="overlay overlay-registration">
+    <div class="popup popup-registration">
+        <div class="popup-title">Регистрация <button aria-label="Закрыть" class="popup-close close-all"><svg width="26" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m6.9 6.25 12.5 12.5m-12.5 0 12.5-12.5-12.5 12.5Z"  stroke-width="2.27" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+
+        <div class="popup-content">
+
+        </div>
+
+        <div class="center-block">
+            <button class="btn btn-lime__fill close-all close-all">Ок</button>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
 
 </body>
 </html>

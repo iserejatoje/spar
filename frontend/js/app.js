@@ -1,6 +1,11 @@
 import jQuery from "jquery";
 window.$ = window.jQuery = jQuery;
 
+let documentWidth = document.documentElement.clientWidth
+let windowsWidth = window.innerWidth
+let scrollbarWidth = windowsWidth - documentWidth
+document.documentElement.style.setProperty('--scrollbar-width', scrollbarWidth.toString() + 'px')
+
 $('[data-component] .tab').click(function () {
     $(this).addClass('active').siblings().removeClass('active')
     let $component = $(this).parent().data('component')
